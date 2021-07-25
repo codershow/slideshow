@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        /* * {
+            padding: 0;
+            margin: 0;
+        } */
+        .focus {
+            position:relative;
+            width: 400px;
+            height: 300px;
+            background-color: #008c8c;
+            overflow: hidden;
+        }
+        ul {
+            width: 500%;
+            position:absolute;
+            top: 0;
+            left: 0;
+        }
+        .arrow-1 {
+            position: absolute;
+            left: 0;
+            top: 45%;
+            font-size: 30px;
+            color: #ffffff;
+            display: none;
+            z-index: 2;
+        }
+        
+        .arrow-r {
+            position: absolute;
+            right: 0;
+            top: 45%;
+            font-size: 30px;
+            color: #ffffff;
+            display: none;
+            z-index: 2;
+        }
+        
+        
+        ul li a img {
+            width: 400px;
+            height: 300px;
+            float: left;
+            
+        }
+        .circle {
+            position: absolute;
+            left: 50px;
+            bottom: 20px;
+
+        }
+        .circle li {
+            width: 8px;
+            height: 8px;
+            /* background-color: red; */
+            border: solid 2px #ffffff;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        .current {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <!-- 这个animate.js 必须写到 轮播图制作.js
+    上面 因为是轮播图.js 调用 animate.js -->
+    <script src="./animate.js"></script>
+    <script src="./index.js"></script>
+    <div class="focus">
+        <!-- 左侧按钮 -->
+        <a href="javascript:;" class="arrow-1">
+            &lt;
+        </a>
+        <!-- 右侧按钮 -->
+        <a href="javascript:;" class="arrow-r">
+            &gt;
+        </a>
+        <!-- 小圆圈 -->
+        
+        <!-- 核心滚动区域 -->
+        <ul>
+            <li><a href="#"><img src="./images/focus.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./images/focus1.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./images/focus2.jpg" alt=""></a></li>
+            <li><a href="#"><img src="./images/focus3.jpg" alt=""></a></li>
+            <!-- <li><a href="#"><img src="./image/focus.jpg" alt=""></a></li> -->
+        </ul>
+        <ol class="circle">
+
+        </ol>
+    </div>
+</body>
+</html>
